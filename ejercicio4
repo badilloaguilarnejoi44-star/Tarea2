@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float inversion, tasa, monto_final;
+
+    printf("Ingresa el capital a invertir: ");
+    scanf("%f", &inversion);
+
+    printf("Ingresa la tasa de interes mensual (en %%): ");
+    scanf("%f", &tasa);
+
+    monto_final = inversion * (1 + (tasa / 100.0));
+
+    printf("Monto al finalizar el mes: %.2f\n", monto_final);
+
+    return 0;
+}

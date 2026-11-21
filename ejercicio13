@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    long long suma = 0;
+
+    printf("Ingresa la cantidad de elementos del arreglo: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    for (i = 0; i < n; i++) {
+        printf("Ingresa el elemento %d: ", i + 1);
+        scanf("%d", &arr[i]);
+        suma += arr[i];
+    }
+
+    printf("La suma de los elementos es: %lld\n", suma);
+
+    return 0;
+}

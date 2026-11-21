@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    long long producto = 1;
+
+    printf("Ingresa un numero entero positivo N: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        producto *= i;
+    }
+
+    printf("El producto de los primeros %d numeros naturales es: %lld\n", n, producto);
+
+    return 0;
+}
